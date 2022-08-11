@@ -1,0 +1,25 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "description": "backend avanzado mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvOli/ejercicio1.git"
+  },
+  "keywords": [],
+  "author": "David Oliva <divoliva@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvOli/ejercicio1/issues"
+  },
+  "homepage": "https://github.com/IvOli/ejercicio1#readme",
+  "dependencies": {
+    "mongoose": "^6.5.2"
+  }
+}
