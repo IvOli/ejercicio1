@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-
+import { createBook, deleteBook, readBook, updateBook } from './crud.js';
+import 'dotenv/config'
 const db = mongoose.connection;
 
 db.on('connected', () => {
@@ -19,4 +20,10 @@ db.on('disconnected', () => {
 });
 
 
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_USER_KEY}@cluster0.dk4pq9v.mongodb.net/base1?retryWrites=true&w=majority`, () => {
+    console.log('Callback de función connect');
+    createBook();
+    updateBook();
+    readBook();
+    deleteBook();
+});
